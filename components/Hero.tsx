@@ -2,6 +2,8 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { DotBackground } from "./ui/dot-background";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+import BorderMagic from "./ui/border-magic";
+import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -25,11 +27,18 @@ const Hero = () => {
           </h2>
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming concepts into seamless experiences"
+            words="Transforming concepts into seamless User Experiences"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi, I&apos;m Devansh, a Next.Js Developer
           </p>
+          <a href="#about">
+            <BorderMagic
+              title="Show my work"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
         </div>
       </div>
     </div>
