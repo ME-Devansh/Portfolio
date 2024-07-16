@@ -30,7 +30,7 @@ const Hero = () => {
             words="Transforming concepts into seamless User Experiences"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Devansh, a Next.Js Developer
+            Hi, I&apos;m Devansh, a Fullstack Developer
           </p>
           <a href="#about">
             <BorderMagic
