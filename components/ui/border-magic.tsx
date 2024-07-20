@@ -8,8 +8,8 @@ const BorderMagic = ({
   otherClasses,
 }: {
   title: string;
-  icon: React.ReactNode;
-  position: "left" | "right";
+  icon?: React.ReactNode;
+  position?: "left" | "right";
   handleClick?: () => void;
   otherClasses?: string;
 }) => {
