@@ -15,11 +15,11 @@ const Footer = () => {
       </div>
       <div className="flex flex-col items-center">
         <h1 className="font-bold text-4xl md:text-4xl text-center lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> diigtal
-          presence to a next level?
+          Ready to take your{" "}
+          <span className="text-purple">digital presence</span> to a next level?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          React out to me today and let&apos;s discuss how I can help you
+          Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals
         </p>
         <a href="mailto:devansh.pant02@gmail.com">
@@ -31,17 +31,19 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-y-2">
-        <p className="md:text-base text-xs md:font-normal font-light">
-          Copyright © 2024 Devansh
+        <p className="md:text-sm text-sm md:font-normal font-light">
+          Copyright © 2024 Devansh Pant
         </p>
         <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map(({ id, img }) => (
-            <div
+          {socialMedia.map(({ id, img, link }) => (
+            <a
               key={id}
+              href={link}
+              target="_blank"
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border-black-300"
             >
               <img src={img} alt={img} width={20} height={20}></img>
-            </div>
+            </a>
           ))}
         </div>
       </div>
