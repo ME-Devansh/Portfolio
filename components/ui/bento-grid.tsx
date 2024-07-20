@@ -4,9 +4,9 @@ import { BackgroundGradientAnimation } from "./background-gradient-animation";
 import { GlobeDemo } from "./grid-globe";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
-import Lottie from "react-lottie";
 import BorderMagic from "./border-magic";
 import { IoCopyOutline } from "react-icons/io5";
+import Lottie from "lottie-react";
 
 export const BentoGrid = ({
   className,
@@ -51,6 +51,7 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText("devansh.pant02@gmail.com");
     setCopied(true);
   };
+
   return (
     <div
       className={cn(
@@ -130,14 +131,10 @@ export const BentoGridItem = ({
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
                 <Lottie
-                  options={{
-                    loop: copied,
-                    autoplay: copied,
-                    animationData,
-                    rendererSettings: {
-                      preserveAspectRatio: "xMidYMid slice",
-                    },
-                  }}
+                  animationData={animationData}
+                  loop={copied}
+                  autoplay={copied}
+                  rendererSettings={{ preserveAspectRatio: "xMidYMid slice" }}
                 />
               </div>
               <BorderMagic
