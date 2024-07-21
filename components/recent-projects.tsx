@@ -7,9 +7,9 @@ const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
       <h1 className="font-bold text-4xl md:text-4xl text-center">
-        A small selection <span className="text-purple">recent projects</span>
+        A small selection of <span className="text-purple">projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8">
         {projects.map(({ des, iconLists, id, img, link, title }) => (
           <div
             key={`${id}-${title}`}
@@ -17,15 +17,14 @@ const RecentProjects = () => {
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] sm:[h-40vh] overflow-hidden h-[30vh] mb-10">
-                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]">
-                  <img src="/bg.png" alt="bg-img" />
+                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl justify-center items-center flex">
+                  <img src={img} alt={title} className="z-10 rounded-xl" />
                 </div>
-                <img src={img} alt={title} className="z-10 absolute bottom-0" />
               </div>
               <h1 className="font-bold lg:text-lg md:text-xl line-clamp-1 text-base">
                 {title}
               </h1>
-              <p className="lg:text-base lg:font-normal font-light text-sm line-clamp-2">
+              <p className="lg:text-base lg:font-normal font-light text-sm line-clamp-3">
                 {des}
               </p>
               <div className="flex items-center justify-between mt-7 mb-3">
