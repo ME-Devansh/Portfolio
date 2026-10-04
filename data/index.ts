@@ -173,15 +173,24 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
+    title: "Software Development Engineer",
+    organisation: "Zomato",
+    duration: "Jan'25 - Present",
+    desc: "Working on building and optimizing solutions at Zomato, contributing to product development and engineering excellence.",
+    className: "md:col-span-2",
+    thumbnail: "/zomato.png",
+  },
+  {
+    id: 2,
     title: "Fullstack Developer",
     organisation: "Eka Care",
-    duration: "July'23 - Present",
+    duration: "July'23 - Dec'24",
     desc: "Solving and Optimizing solutions for doctors, creating a seamless experience for appointments and queue management.",
     className: "md:col-span-2",
     thumbnail: "/eka.svg",
   },
   {
-    id: 2,
+    id: 3,
     title: "Software Devlepment Engineer - Intern",
     duration: "Jan'23 - June'23",
     desc: "Developed a configuration manager, reducing dependency on developers and moving it out to business users, decreasing the bandwidth consumed from 3 days to a few hours.",
@@ -190,7 +199,7 @@ export const workExperience = [
     thumbnail: "/amazon.svg",
   },
   {
-    id: 3,
+    id: 4,
     title: "Backend Intern",
     organisation: "Eka Care",
     duration: "Oct'22 - Dec'22",
@@ -199,7 +208,7 @@ export const workExperience = [
     thumbnail: "/eka.svg",
   },
   {
-    id: 4,
+    id: 5,
     title: "Subject Matter Expert",
     organisation: "Chegg",
     duration: "Feb'22 - Apr'22",
